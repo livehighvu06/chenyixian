@@ -583,6 +583,7 @@ a:hover .txt:after {
 }
 
 .footer .footer-info .icon a span {
+  display: none;
   background: #7BB8B7;
   color: #fff;
   position: absolute;
@@ -634,13 +635,6 @@ a:hover .txt:after {
 
 .footer-info .icon a:hover span {
   opacity: 1;
-}
-
-/* 小手機 */
-@media (max-width: 376px) {
-  .container {
-    padding: 60px 20px 0 20px;
-  }
 }
 
 /* 桌機 or 平板 */
@@ -743,6 +737,10 @@ a:hover .txt:after {
   }
   .timebox {
     width: 100%;
+  }
+  .footer-info .icon a:hover span {
+    opacity: 1;
+    display: block;
   }
 }
 
