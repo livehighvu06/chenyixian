@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chen Yi Xian 網頁設計">
+    <meta name="keywords" content="Chen Yi Xian,網頁,設計,前端,切版,tw">
+    <meta property="og:title" content="Chen Yi Xian">
+    <meta property="og:description" content="把網站變成自己喜歡的樣子">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="website">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="./img/cyxlogo.ico">
+    <title>Chen Yi Xian</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script src="./js/jquery.smoove.js"></script>
+    <script src="https://kit.fontawesome.com/9a416a1cca.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="cyxweb">
+                <div class="cyxlogo">
+                    <img src="./img/cyxlogo.png" width="30px" height="30px" alt="logo">
+                </div>
+                <div class="cyxtitle">
+                    <h1><a href="#home">CHEN YI XIAN</a></h1>
+                </div>
+            </div>
+            <div class="nav-lg">
+                <ul>
+                    <li><a href="#profile">Prifile</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#ex">Experience</a></li>
+                </ul>
+            </div>
+            <div class="nav-sm">
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#ex">Experience</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+        </header>
+        <div class="cover" id="home">
+            <div class="main-cover parallax-window" data-parallax="scroll" data-image-src="img/cover-lg.jpg" width="1440px">
+              <p class="maintitle">把網站變成自己喜歡的樣子</p>
+            </div>
+            <div class="scroll-down">
+                <a href="#profile"><i class="fas fa-arrow-down"></i></a>
+            </div>
+            <script>
+                const scroll = document.querySelector('.scroll-down');
+                const bgc = ['#E0D8C9','#ADCDDA','#80B3C5','#F7CFA8'];
+                var i =0 ;
+                setInterval(()=>{
+                    if(i<bgc.length){
+                        scroll.style.background = bgc[i];
+                    }else if(i>bgc.length){
+                        scroll.style.background = '#f0d174';
+                        i=0;
+                        return 
+                    }
+                    i+=1;
+                },3000);
+            </script>
+        </div>
+
+        <div id="profile" >
+            <div class="section" style="opacity: 1; transition: all 1s ease 0s, opacity 1.5s ease 0s;">
+                <h1>Profile</h1>
+                <p>I'm a Front-End webdeveloper</p>
+                <hr>
+                <div class="row">
+                    <div class="col-4 about">
+                        <h2>About me</h2>
+                        <p>學生時期很喜歡玩無名小站<br />那時候常常會自己動手改樣式<br />看到網站變成與眾不同的樣子很有成就感<br />決定轉職前也找了免費的課程來閱讀<br />在這過程中覺得很有趣<br />所以也下定決心要轉職成為前端工程師
+                        </p>
+                    </div>
+                    <div class="col-4 cyxphoto">
+                        <img src="./img/cyx.png" alt="selfie" width="180px" height="180px">
+                    </div>
+                    <div class="col-4">
+                        <h2>Details</h2>
+                        <p>
+                            <strong>Name：</strong>
+                            <br /><span>陳義賢 (Eddie Chen)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="work">
+            <div class="section">
+                <h1>Work</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="box">
+                            <a href="https://livehighvu06.github.io/kh-travel-info/" target="_blank">
+                                <img src="./img/item1.png" alt="">
+                                <div class="txt">
+                                    <h3>高雄旅遊資訊</h3>
+                                    <p>JavaScript + SASS</p>
+                                </div>
+                            </a>
+                          
+                            <div class="description">
+                                <div class="workname"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                            <a href="https://livehighvu06.github.io/mask-info-card/" target="_blank">
+                                <img src="./img/item2.png" alt="">
+                                <div class="txt">
+                                    <h3>口罩資訊卡</h3>
+                                    <p>Ajax Public API</p>
+                                </div>
+                            </a>
+                          
+                            <div class="description">
+                                <div class="workname"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                            <a href="https://livehighvu06.github.io/pj-sweetaste/" target="_blank">
+                                <img src="./img/item3.png" alt="">
+                                <div class="txt">
+                                    <h3>甜點電商</h3>
+                                    <p>運用Bootstrap排版</p>
+                                </div>
+                            </a>
+                          
+                            <div class="description">
+                                <div class="workname"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ex">
+            <div class="section">
+                <h1>Experience</h1>
+                <hr>
+                <ul class="timeline">
+                    <li>
+                        <div class="timebox">
+                            <h2>溫野菜 店面幹部</h2>
+                            <p>在這段時間，累積了不少責任感上的培養，也了解一間店面是如何經營。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timebox">
+                            <h2>遠傳電信 電信業務人員</h2>
+                            <p>出社會後的第一份正職工作，還不太懂得應對進退，雖然就職不到一年，
+                                但內向的我學會了怎麼說話，工作上應有的態度，也學會換位思考。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timebox">
+                            <h2>東南科技大學</h2>
+                            <p>進入校園後，熱衷於社團活動，這期間改變很多，從前課堂上念課文都會非常緊張的我，也成為表演的樂手</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+               <div class="footer-info">
+                <div class="icon">
+                    <a href="#"><i class="fas fa-rss-square"></i><span>CYX RSS訂閱</span></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i><span>CYXfacebook粉絲團</span></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i><span>CYX youtube</span></a>
+                    <a href="#"><i class="fab fa-line"></i><span>加CYX Line@好友</span></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i><span>CYX twiter</span></a>
+                    <a href="#"><i class="fab fa-instagram"></i><span>CYX instagram</span></a>
+                </div>
+               </div>
+                <div class="copyright">
+                    <img src="./img/cyxlogo.png" width="20px" height="20px">
+                    <span>僅用於學習用途</span>
+                </div>
+        </footer>
+    </div>
+    <script>
+        function applyClickEvent(){
+            $('a[href*=\\#]').on('click', function(e){
+                e.preventDefault();
+                console.log($( $.attr(this, 'href') ).offset().top);
+                
+                if($($.attr(this, 'href')).length > 0){
+                  $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                    }, 400);
+                }
+                return false
+            });
+        }
+        function applyNavigationFixForPhone()
+        {
+            $('.nav-sm li a').click(function(event) 
+            {
+                $('.nav-sm').removeClass('beClicked');
+                $('.hamburger').removeClass('beClicked');
+            });
+        }
+       
+        $(document).ready(function(){
+            $('.hamburger').click(function(){
+                $(this).toggleClass('beClicked');
+                $('.nav-sm').toggleClass('beClicked');
+            });
+            $('.section').smoove({moveY:'60%'});
+            applyClickEvent();
+            applyNavigationFixForPhone();
+        });
+        
+    </script>
+</body>
+</html>
